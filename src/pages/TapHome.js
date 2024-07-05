@@ -1,17 +1,17 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
 import styled, { keyframes } from "styled-components";
-import "./App.css";
+import "../App.css";
 import coinsmall from "../images/coinsmall.webp";
 import tapmecoin from "../images/tapme1.webp";
 import bronze from "../images/bronze.webp";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { db } from "./firebase";
+import { db } from "../firebase";
 import { collection, addDoc, getDocs, updateDoc } from "firebase/firestore";
-import Animate from "./Components/Animate";
-import Spinner from "./Components/Spinner";
-import Levels from "./Components/Levels";
+import Animate from "../Components/Animate";
+import Spinner from "../Components/Spinner";
+import Levels from "../Components/Levels";
 import flash from "../images/flash.webp";
-import { EnergyContext } from "./context/EnergyContext";
+import { EnergyContext } from "../context/EnergyContext";
 
 const slideUp = keyframes`
   0% {
